@@ -134,4 +134,5 @@ else{
     print "file not found";
     print "end";
 }
+print "fun php";
 ?>
