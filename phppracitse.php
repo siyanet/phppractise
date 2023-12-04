@@ -133,5 +133,6 @@ if (file_exists($fk)){
 else{
     print "file not found";
     print "end";
+    print "ended";
 }
 ?>
