@@ -1,0 +1,41 @@
+<?php
+$server_name = "localhost";
+$un = "root";
+$password = "";
+$conn = new mysqli($server_name,$un,$password);
+if ($conn -> connect_error){
+    die("error" . $conn ->connect_error);
+}
+else{
+    echo "connected succesfully";
+}
+#$sql = "create database registration";
+#if ($conn ->query($sql)){
+    #echo "database created succesfully";}
+#$else{
+    #echo "error" .$conn->error;
+#}
+$sqlselectdb = "use registration";
+if ($conn->query($sqlselectdb)){
+    echo "database selected succesfully";
+}
+else{
+    echo "error" .$conn->error;
+}
+$sqlcreate = "create table student(id int primary key, name varchar(20))";
+if ($conn->query($sqlcreate)){
+    echo "tabele created succesfully";
+}
+else{
+    echo "error ". $conn->error;
+}
+$sqlinsert = "insert into student values(1,'abebe')";
+if ($conn->query($sqlinsert)){
+    echo "data inserted succesfully";
+}
+else{
+    echo "error ". $conn->error;
+}
+$conn->close();
+
+?>
