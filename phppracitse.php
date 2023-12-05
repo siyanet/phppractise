@@ -136,4 +136,5 @@ else{
     print "end";
     print "ended";
 }
+print "fun php";
 ?>
