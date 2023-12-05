@@ -21,7 +21,7 @@ elseif ($res  == 5){
 
 }
 else {
-    print "ow";
+    print "the variable is not equal to five and is greater than 10 ";
 }
 $userInput = 9;
 switch($userInput){
@@ -39,19 +39,20 @@ switch($userInput){
         break;
 }
 $i = 4;
-# do while is will not check only the first iteration
+# do while  will not check only the first iteration
 do{
     print("you\n");
 $i++;
 }
 while($i <5);
 $j = 1;
-
+# while statement
 while ( $j < 5){
     print "k";
     $j++;
 }
 print "\n";
+#for loop statement
 for($i = 0; $i<4; $i++){
     print "hi";
 }
@@ -92,7 +93,7 @@ function funsum($a,$b){
     return $a +$b;
 }
 print funsum(7,9);
-$f = "C:\Users\NebHa\OneDrive\Documents\phpfile.txt";
+$f = "phpfile.txt";
 if (file_exists($f)){
     if (is_readable($f)){
         $fo = fopen($f,"r");
@@ -115,7 +116,7 @@ if (is_writable($f)){
     $w = fwrite($fw,"thanks to God");
     fclose($fw);
 }
-$fk = "C:\Users\NebHa\OneDrive\Documents\phpfile.txt";
+$fk = "phpfile.txt";
 if (file_exists($fk)){
     if (is_readable($fk)){
         $fo = fopen($fk,"r");
